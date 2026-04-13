@@ -105,12 +105,21 @@
             <img src="https://images.squarespace-cdn.com/content/v1/5d07c9c0f734df00014fa95b/1561019698539-F0N5D0X50NJFITYL0CBI/image-asset.png" alt="" style="width: 100%; height: auto; display: block;">
           </div>
 
-          <!-- Row 2 — Three equal-width images -->
+          <!-- Row 2 — Three equal-width images; center cropped to match adjacent heights -->
           <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 8px 0;">
-            <img src="https://images.squarespace-cdn.com/content/v1/5d07c9c0f734df00014fa95b/1561022956534-VL3B1FGSOE0ZVF67JK2I/Screen+Shot+2019-06-20+at+4.37.39+AM.png" alt="" style="width: 100%; height: auto; display: block;">
-            <img src="https://images.squarespace-cdn.com/content/v1/5d07c9c0f734df00014fa95b/1561022967106-63ZYP19QHK21T2OZDI2M/Screen+Shot+2019-06-20+at+4.37.15+AM.png" alt="" style="width: 100%; height: auto; display: block;">
+            <img id="shrill-r2-ref" src="https://images.squarespace-cdn.com/content/v1/5d07c9c0f734df00014fa95b/1561022956534-VL3B1FGSOE0ZVF67JK2I/Screen+Shot+2019-06-20+at+4.37.39+AM.png" alt="" style="width: 100%; height: auto; display: block;">
+            <img id="shrill-r2-center" src="https://images.squarespace-cdn.com/content/v1/5d07c9c0f734df00014fa95b/1561022967106-63ZYP19QHK21T2OZDI2M/Screen+Shot+2019-06-20+at+4.37.15+AM.png" alt="" style="width: 100%; object-fit: cover; object-position: top; display: block;">
             <img src="https://images.squarespace-cdn.com/content/v1/5d07c9c0f734df00014fa95b/1561022956426-TM0BYRTAB52P8AOLFG02/Screen+Shot+2019-06-20+at+4.37.32+AM.png" alt="" style="width: 100%; height: auto; display: block;">
           </div>
+          <script>
+            (function() {
+              var ref = document.getElementById('shrill-r2-ref');
+              var center = document.getElementById('shrill-r2-center');
+              function sync() { if (ref && center) center.style.height = ref.offsetHeight + 'px'; }
+              if (ref.complete) sync(); else ref.addEventListener('load', sync);
+              window.addEventListener('resize', sync);
+            })();
+          </script>
 
           <!-- Row 3 — Four equal-width images (celebrity/influencer) -->
           <div class="shrill-row-3" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 8px 0;">
