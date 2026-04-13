@@ -1066,6 +1066,11 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
   margin-top: 1.25rem;
 }
 
+@media (max-width: 768px) {
+  .shrill-row-3 { grid-template-columns: repeat(2, 1fr) !important; }
+  .shrill-row-4 { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
 .shrill-scroll-strip {
   display: flex;
   overflow-x: auto;
