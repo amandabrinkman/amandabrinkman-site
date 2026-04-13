@@ -1046,11 +1046,6 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
 }
 .work-img-grid img.tall { aspect-ratio: 3/4; }
 
-.shrill-tabs-wrapper {
-  width: 100%;
-  padding: 2rem 0 3.5rem;
-  border-bottom: 0.5px solid var(--red-border);
-}
 
 .case-subsection {
   margin-top: 2.5rem;
@@ -1072,26 +1067,6 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
   margin-top: 1.25rem;
 }
 
-@media (max-width: 768px) {
-  .shrill-row-3 { grid-template-columns: repeat(2, 1fr) !important; }
-  .shrill-row-4 { grid-template-columns: repeat(2, 1fr) !important; }
-}
-
-.shrill-scroll-strip {
-  display: flex;
-  overflow-x: auto;
-  gap: 12px;
-  padding-bottom: 12px;
-  margin: 32px 0;
-  scrollbar-width: thin;
-}
-.shrill-scroll-strip img {
-  height: 280px;
-  width: auto;
-  object-fit: cover;
-  flex-shrink: 0;
-  border-radius: 2px;
-}
 
 .press-strip {
   display: flex;
