@@ -996,6 +996,119 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
 .writing-cta p { margin-bottom: 1.5rem; }
 
 /* ============================================================
+   WORK PAGE — IMAGE GRIDS & SUB-SECTIONS
+   ============================================================ */
+.work-img-grid {
+  display: grid;
+  gap: 0.6rem;
+  margin: 2rem 0;
+}
+.work-img-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.work-img-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+.work-img-grid.cols-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+.work-img-grid img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  background: var(--linen);
+}
+.work-img-grid img.tall { aspect-ratio: 3/4; }
+
+.case-subsection {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 0.5px solid var(--red-border);
+}
+.case-subsection h3 {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+.subsection-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.press-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  margin: 1.5rem 0 0;
+  padding: 1.25rem 0 0;
+  border-top: 0.5px solid var(--red-border);
+}
+.press-name {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+}
+
+.pull-quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+  line-height: 1.3;
+  color: var(--ink);
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--crimson);
+}
+
+/* ============================================================
+   SPEAKING PAGE — TEXT VENUE LIST & PHOTO
+   ============================================================ */
+.venue-list {
+  columns: 2;
+  column-gap: 3rem;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+.venue-list li {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  padding: 0.65rem 0;
+  border-bottom: 0.5px solid var(--red-border);
+  break-inside: avoid;
+}
+
+.speaking-photo-wrap {
+  margin: 0 0 3rem;
+}
+.speaking-photo-wrap img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.speaking-photo-placeholder {
+  width: 100%;
+  height: 280px;
+  background: var(--linen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--ink-light);
+  letter-spacing: 0.05em;
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .site-footer {
@@ -1071,6 +1184,11 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
   /* Contact */
   .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
 
+  /* Work image grids */
+  .work-img-grid.cols-3 { grid-template-columns: 1fr 1fr; }
+  .work-img-grid.cols-4 { grid-template-columns: 1fr 1fr; }
+  /* Venue list */
+  .venue-list { columns: 1; }
   /* Writing */
   .writing-piece { grid-template-columns: 1fr; gap: 0.75rem; }
 
