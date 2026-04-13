@@ -1047,8 +1047,9 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
 .work-img-grid img.tall { aspect-ratio: 3/4; }
 
 .case-study .shrill-tabs {
-  width: calc(100% + 200px);
-  margin-left: -200px;
+  width: calc(100% + 200px + 4rem);
+  margin-left: calc(-200px - 4rem);
+  overflow: visible;
 }
 
 @media (max-width: 768px) {
