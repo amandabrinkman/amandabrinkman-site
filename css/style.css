@@ -601,6 +601,17 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
 .case-body p:last-of-type { margin-bottom: 0; }
 
 /* Metrics */
+.metrics-label {
+  font-family: var(--display);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--crimson);
+  margin-top: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
 .metrics {
   display: flex;
   gap: 2rem;
