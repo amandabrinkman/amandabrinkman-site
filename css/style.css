@@ -213,8 +213,8 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 6rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -222,9 +222,11 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
 .hero-inner {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
-  align-items: end;
+  gap: 0;
+  align-items: start;
   max-width: 720px;
+  margin-left: 0;
+  text-align: left;
 }
 
 .hero-tags {
