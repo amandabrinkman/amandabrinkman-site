@@ -1007,6 +1007,26 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
 .writing-cta p { margin-bottom: 1.5rem; }
 
 /* ============================================================
+   ANDMORE IMAGE GRID
+   ============================================================ */
+.andmore-img-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 32px;
+}
+.andmore-img-grid img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  background: var(--linen);
+}
+@media (max-width: 768px) {
+  .andmore-img-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
    WORK PAGE — IMAGE GRIDS & SUB-SECTIONS
    ============================================================ */
 .work-img-grid {
