@@ -691,8 +691,10 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
   font-family: var(--sans);
 }
 
-/* Photo column */
-.photo-col {}
+/* Sidebar column */
+.photo-col {
+  padding-top: 0;
+}
 
 .photo-placeholder-lg {
   background: var(--ivory);
