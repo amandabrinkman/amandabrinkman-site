@@ -1046,6 +1046,18 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
 }
 .work-img-grid img.tall { aspect-ratio: 3/4; }
 
+.case-study .shrill-tabs {
+  width: calc(100% + 200px);
+  margin-left: -200px;
+}
+
+@media (max-width: 768px) {
+  .case-study .shrill-tabs {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 .case-subsection {
   margin-top: 2.5rem;
   padding-top: 2rem;
