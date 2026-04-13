@@ -742,6 +742,32 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
   line-height: 1.8;
 }
 
+.about-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 0.5px solid var(--red-border);
+  margin-bottom: 5rem;
+}
+
+.about-meta-block {
+  padding: 1.5rem 2rem 1.5rem 0;
+  border-right: 0.5px solid var(--red-border);
+}
+
+.about-meta-block:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.about-meta-block .label { margin-bottom: 0.6rem; display: block; }
+
+.about-meta-block p {
+  font-size: 0.82rem;
+  line-height: 1.8;
+  color: var(--ink-light);
+}
+
 /* ============================================================
    SPEAKING PAGE
    ============================================================ */
@@ -1209,6 +1235,9 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
   /* About — stays two-column, just tighter gap */
   .about-grid { gap: 2.5rem; }
   .photo-placeholder-lg { aspect-ratio: 4/3; }
+  .about-meta { grid-template-columns: repeat(2, 1fr); }
+  .about-meta-block:nth-child(2) { border-right: none; padding-right: 0; }
+  .about-meta-block:nth-child(3) { border-right: 0.5px solid var(--red-border); padding-right: 2rem; }
 
   /* Speaking */
   .speaking-grid { grid-template-columns: 1fr; gap: 2rem; }
