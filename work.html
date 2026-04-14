@@ -203,15 +203,11 @@
         </div>
         <div class="case-body">
           <p>Commissioned by Turner Broadcasting to develop the original concept, research, and script for the Ad Council's #SheCanSTEM initiative. The resulting video reached millions of viewers across TBS and The Ad Council social channels.</p>
-          <div style="margin: 24px 0; position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-            <iframe
-              style="position:absolute;top:0;left:0;width:100%;height:100%;"
-              src="https://www.youtube.com/embed/sbNMPxE_WJE"
-              title="She Can STEM — Turner Broadcasting / Ad Council"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
+          <div style="margin: 24px 0; position:relative; padding-bottom:56.25%; height:0; overflow:hidden; cursor:pointer;" onclick="this.innerHTML='<iframe style=\'position:absolute;top:0;left:0;width:100%;height:100%;\' src=\'https://www.youtube.com/embed/sbNMPxE_WJE?autoplay=1\' title=\'She Can STEM — Turner Broadcasting / Ad Council\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
+            <img src="images/turner-stem-poster.jpg" alt="Play She Can STEM video" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:68px;background:rgba(255,255,255,0.92);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="6,3 20,12 6,21" fill="#111"/></svg>
+            </div>
           </div>
         </div>
       </article>
