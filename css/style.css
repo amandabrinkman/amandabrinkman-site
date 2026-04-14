@@ -771,7 +771,7 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
 /* ============================================================
    SPEAKING PAGE
    ============================================================ */
-.speaking-intro { padding: 4rem 0 3rem; }
+.speaking-intro { padding: 3rem 0; }
 
 .speaking-grid {
   display: grid;
@@ -1150,7 +1150,7 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
 }
 
 .speaking-photo-wrap {
-  margin: 0 0 3rem;
+  display: none;
 }
 .speaking-photo-wrap img {
   width: 100%;
