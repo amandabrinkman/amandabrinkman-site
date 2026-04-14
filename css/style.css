@@ -226,6 +226,7 @@ hr { border: none; border-top: 0.5px solid var(--red-border); }
   align-items: start;
   max-width: 720px;
   margin-left: 0;
+  margin-right: auto;
   text-align: left;
 }
 
