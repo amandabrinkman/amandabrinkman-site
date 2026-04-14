@@ -53,21 +53,33 @@
             3. Replace YOUR_FORM_ID in the action URL below with your actual form ID
             Free tier works fine for a personal site.
           -->
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div data-fs-success style="display:none;font-family:var(--sans);font-size:0.9rem;color:var(--ink-mid);padding:1.25rem 0;">Thanks — I'll be in touch soon.</div>
+          <div data-fs-error style="display:none;font-family:var(--sans);font-size:0.85rem;color:#b94a48;margin-bottom:1rem;"></div>
+
+          <form id="contact-form">
             <div class="form-field">
               <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" required autocomplete="name">
+              <input type="text" id="name" name="name" required autocomplete="name" data-fs-field>
+              <span data-fs-error="name" style="font-size:0.8rem;color:#b94a48;"></span>
             </div>
             <div class="form-field">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required autocomplete="email">
+              <input type="email" id="email" name="email" required autocomplete="email" data-fs-field>
+              <span data-fs-error="email" style="font-size:0.8rem;color:#b94a48;"></span>
             </div>
             <div class="form-field">
               <label for="message">What you're working on</label>
-              <textarea id="message" name="message" rows="5"></textarea>
+              <textarea id="message" name="message" rows="5" data-fs-field></textarea>
+              <span data-fs-error="message" style="font-size:0.8rem;color:#b94a48;"></span>
             </div>
-            <button type="submit" class="form-submit">Send →</button>
+            <button type="submit" class="form-submit" data-fs-submit-btn>Send →</button>
           </form>
+
+          <script>
+            window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+            formspree('initForm', { formElement: '#contact-form', formId: 'mzdybqdn' });
+          </script>
+          <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
           <p style="margin-top:1.5rem;font-family:var(--sans);font-size:0.82rem;color:var(--ink-light);">
             Or reach me directly at
             <!-- AMANDA: insert your preferred contact email here -->
