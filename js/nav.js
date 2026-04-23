@@ -25,4 +25,20 @@
       a.classList.add('active');
     }
   });
+
+  /* Nav scroll depth — frosted glass after hero */
+  const nav = document.querySelector('.site-nav');
+  if (nav) {
+    let ticking = false;
+    const onScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          nav.classList.toggle('scrolled', window.scrollY > 80);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
 })();
